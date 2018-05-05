@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPSGame</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-image: url("assets/images/mainbg.jpeg");
+            background-size: cover;
+            background-position: center top;
+        }
+
+        .jumbotron {
+            margin-top: 25px;
+            height: 200px;
+            background-image: url("assets/images/jumboimg.jpeg");
+            background-size: cover;
+            background-position: left;
+            color: white;
+            text-align: center;
+        }
+        #textBox {
+            width:620px;
+            height:100px;
+            border:1px solid #000;
+        }
+
+        #p1,
+        #p2,
+        #centerBox {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #000;
+            float: left;
+            margin: 10px;
+        }
+
+        #chat-input {
+            width: 550px;
+            margin-top:10px;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Rock Paper Scissors</h1>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4 col-sm-4"></div>
+            <div class="col-md-4 col-sm-4">
+                <label for="name-input">Enter Your Name:</label>
+                <input type="text" id="name-input">
+                <button type="button" id="nameBtn" class="btn btn-primary">Submit</button>
+                <div id="player"></div>
+                <div id="turn"></div>
+            </div>
+            <div class="col-md-4 col-sm-4"></div>
+        </div>
+        
+        <div class="row">
+            <div id="gameMain">
+                <div class="col-md-4 col-sm-4">
+                    <div id="p1"></div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div id="centerBox"></div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div id="p2"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-10">
+                <div id="textBox"></div>
+                <input type="text" id="chat-input">
+                <button type="button" id="chatBtn" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    
+</script>
