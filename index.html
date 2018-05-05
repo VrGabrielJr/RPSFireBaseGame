@@ -120,5 +120,33 @@
 
   var database = firebase.database();
 
+  var name;
 
+  $("#nameBtn").on("click", function(event) {
+      event.preventDefault();
+
+      name = $("#name-input").val().trim();
+      win = 0;
+      lost = 0;
+      gamesPlayed = 0;
+
+      database.ref().set({
+        name : name,
+      });
+
+      $("#name-input").hide();
+      $("#nameBtn").hide();
+  })
+
+database.ref().on("value", function(snapshot) {
+
+    console.log(snapshot.val().name);
+
+    // Change the HTML to reflect
+    $("#player").text("Welcome " + snapshot.val().name);
+
+    // Handle the errors
+    }, function(errorObject) {
+    console.log("Errors handled: " + errorObject.code);
+});
 </script>
